@@ -18,7 +18,7 @@ include device/sony/qcom-common/BoardConfigCommon.mk
 # inherit from Sony common
 include device/sony/common/BoardConfigCommon.mk
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/msm8226-common/include
+TARGET_SPECIFIC_HEADER_PATH += device/sony/yukon/include
 
 # Platform
 TARGET_BOOTLOADER_BOARD_NAME := MSM8226
@@ -40,7 +40,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE  := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_MKBOOTIMG_ARGS  := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
 BOARD_KERNEL_SEPARATED_DT := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8226-common/boot/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/yukon/boot/custombootimg.mk
 
 # Qualcomm
 BOARD_USES_QCOM_HARDWARE := true
